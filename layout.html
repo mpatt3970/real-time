@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!--get the actual device width-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!--include jquery, jquery mobile, highcharts libraries, layout.css and layout.js-->
+	<link rel="stylesheet" href="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.css" />
+	<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<script src="http://code.jquery.com/mobile/1.3.1/jquery.mobile-1.3.1.min.js"></script>
+	<script src="http://code.highcharts.com/highcharts.js"></script>
+	<script src="http://code.highcharts.com/highcharts-more.js"></script>
+	<link rel="stylesheet" href="layout.css"/>
+	<script src="layout.js"></script>
+	<!--apply a title-->
+	<title>Ski Conditions</title>
+</head>
+<body>
+	<!--create a container div-->
+	<div class="container">
+		<div id="header">
+			<!--put logos and a header title in the header -->
+			<img src="http://www.its.caltech.edu/~atomic/snowcrystals/photos/w031230b033.jpg" alt="snowflake" id="snowflake">
+			<img src="http://www.eol.ucar.edu/projects/hippo/images/mis_4c_pos.png" alt="logo" id="eol_logo">
+			<div class="clear"></div>
+			<h1>The Current Ski Conditions</h1>
+		</div>
+		<div id="locale">
+			<h2>Choose A Location</h2>
+			<!--the location selector form, options given below the select-->
+			<form>
+				<select name="location" id="location_selector">
+					<option value="Loveland" id="love">Loveland</option>
+					<option value="Berthoud" id="bert">Berthoud</option>
+					<option value="Vail" id="vail">Vail</option>
+				</select>
+			</form>
+		</div>
+		<div id="variables">
+			<h2>Choose Your Variables</h2>
+			<!--variables are appended to here from the options array
+			this is in keeping with the idea of dynamically uploading variable options-->
+		</div>
+		<div id="charts">
+			<h2>Real Time Charts</h2>
+			<!--holds the charts, they're appended here when a variable is selected-->
+
+		</div>
+		<div class="clear"></div>
+		<div id="footer">
+			<!--shout out to wunderground for the data, and in image based link to their site-->
+			<p>This weather data provided by <a href="http://www.wunderground.com/"><img height="30px" width="180px" src="http://icons.wxug.com/logos/JPG/wundergroundLogo_4c_horz.jpg"></img></a></p>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,79 @@
+/*sets some basic css styles for the webpage*/
+/*heavy use of % to keep the design fluid*/
+.container {
+	width: 80%;
+	background-color: #B3C7DB;
+	margin: 0 auto;
+}
+.clear {
+	clear:both;
+}
+.chart {
+	width: 90%;
+	border-style: solid;
+	border-right: none;
+	border-left: none;
+	border-width: 3px;
+	margin: 0 auto;
+}
+
+#header {
+	width: 100%;
+}
+#snowflake {
+	width: 20%;
+	height: auto;
+	float: left;
+}
+h1 {
+	width: 80%;
+	text-align: center;
+	margin: 0 auto;
+}
+#eol_logo {
+	width: 20%;
+	height: auto;
+	float: right;
+}
+#locale {
+	width: 70%;
+	margin: 0 auto;
+}
+h2 {
+	text-align: center;
+}
+#charts {
+	margin: 0 auto;
+}
+#variables {
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
+}
+#footer {
+	text-align: center;
+}
+/*these are how the format changes based on the width of the screen*/
+@media (max-width: 767px) {
+	.container {
+		width: 100%;
+	}
+}
+/*here i remove the logos for this breakpoint*/
+@media (max-width: 400px) {
+	#snowflake {
+		display: none;
+	}
+	#eol_logo {
+		display: none;
+	}
+	body {
+		font-size: 75%;
+	}
+}
+/*caps the width of the container for huge screens*/
+@media (min-width: 1000px) {
+	.container {
+		width: 800px;
+	}
+}

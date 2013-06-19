@@ -9,7 +9,8 @@ Project Description:
   Create a webpage to display real time charts of weather data pushed in by a websocket. The websocket will 
   send the available variable options. It must allow a user to select variables from available options. Then 
   construct charts for those using data as it updates. The purpose is to observe large random fluxes that 
-  will indicate a sensor is broken. Error bars must be shown for the data points.
+  will indicate a sensor is broken. Error bars must be shown for the data points. There is an emphasis on
+  making this mobile friendly since it will be used in the field.
 The Back End:
 =========
   The back end will be implemented with libwebsockets. It will push json from field embedded devices attached to
@@ -22,7 +23,8 @@ Contribution Notes:
 =========
   Feel free to contribute any features that you think are useful. Thanks!
   Some Suggestions:
-    Change Color for a Flux
-    Allow Number of Points to Change
-    How will tooltip work in mobile without 'hover'?
-    Begin with all variables selected
+    Fix Overlap of Times for Small Screens. 
+    Change Color for a Flux. 
+    Allow Number of Points to Change. 
+    How will tooltip work in mobile without 'hover'? 
+    Begin with all variables selected. 
